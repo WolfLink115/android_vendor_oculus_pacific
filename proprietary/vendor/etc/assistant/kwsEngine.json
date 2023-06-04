@@ -1,0 +1,15 @@
+{
+  "initNetPath": "q_init_net.pb",
+  "predictNetPath": "q_predict_net.pb",
+  "liteInitNetPath": "dnn_q_init_net.pb",
+  "litePredictNetPath": "dnn_q_predict_net.pb",
+  "windowShift": 10,
+  "chunkSize": 80,
+  "featureSize": 40,
+  "numSuppressedChunks": 10,
+  "detectionThreshold": 0.995,
+  "liteDetectionThreshold": 0.8,
+  "mean": "mean",
+  "smean": "smean",
+  "enableTwoStage": true
+}

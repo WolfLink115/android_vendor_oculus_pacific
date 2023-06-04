@@ -1,0 +1,20 @@
+#!/system/bin/sh
+
+ARG=$1
+
+case "$ARG" in
+start)
+  am broadcast -a com.oculus.os.trackingservice.start
+  ;;
+stop)
+  am broadcast -a com.oculus.os.trackingservice.stop
+  ;;
+restart)
+  am broadcast -a com.oculus.os.trackingservice.stop
+  sleep 2
+  am broadcast -a com.oculus.os.trackingservice.start
+  ;;
+*)
+  echo "Usage: trackingservice_ctl [start|stop|restart]"
+  ;;
+esac
