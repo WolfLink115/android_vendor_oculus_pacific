@@ -1,0 +1,9 @@
+on boot
+    # Grant RW access to the video codec devices
+    chmod 0666 /dev/video32
+    chmod 0666 /dev/video33
+
+service codecmgr /system/vendor/bin/codecmanager
+    class core
+    user system
+    group system

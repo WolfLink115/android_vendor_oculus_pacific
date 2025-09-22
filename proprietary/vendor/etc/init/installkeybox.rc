@@ -1,0 +1,2 @@
+on property:oculus.mfgapp.keyboxuri=*
+    exec u:r:installkeybox:s0 -- /system/vendor/bin/installkeybox ${oculus.mfgapp.keyboxuri}

@@ -1,0 +1,4 @@
+service postproc_svr /system/vendor/bin/postprocserver
+    class main
+    user system
+    group graphics

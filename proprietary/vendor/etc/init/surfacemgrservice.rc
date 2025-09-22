@@ -1,0 +1,4 @@
+service surfaceservice /system/vendor/bin/surfacemgrserver
+    class main
+    user system
+    group graphics

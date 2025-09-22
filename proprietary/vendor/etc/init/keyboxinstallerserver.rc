@@ -1,0 +1,8 @@
+service keyboxinstallerserver /system/vendor/bin/keyboxinstallerserver
+  class late_start
+  user system
+  group system
+  disabled
+
+on boot && property:ro.boot.mfg.insecure=1
+  start keyboxinstallerserver
